@@ -1,1 +1,6 @@
 @import 'tailwindcss';
+
+
+.mute-bg-white{
+  --muted-foreground: 215 20% 60%; /* example HSL values */
+}

@@ -11,7 +11,7 @@ import typescript from '../../assets/typescript.png'
 function TechUsed() {
 
     return(
-        <div>
+        <div className="ml-3 " >
             <p className="text-2xl font-bold">What I work with</p>
             <div className="flex flex-wrap">
                 <TechCard image={html5Image}  name="HTML"/>

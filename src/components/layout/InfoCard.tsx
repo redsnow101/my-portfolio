@@ -1,7 +1,11 @@
 import cv from '../../assets/Academic_CV.pdf'
 import Social from '../ui/Social'
 
-function InfoCard() {
+interface InfoCardProps{
+  currentTheme : {color:string, backgroundColor:string}
+}
+
+function InfoCard({currentTheme}:InfoCardProps) {
   return (
     <div className="border-1 p-4 rounded-xl m-auto">
 
@@ -24,11 +28,15 @@ function InfoCard() {
         </div>
       </div>
 
-      <p className="my-2 ">I'm 23-year-old Full-Stack Web Developer. I have been programming for more than 2 years. I create professional websites.</p>
+      <p className="my-2 ">Final year B.Tech Student with a strong foundation in development, problem-solving and collaboration.</p>
       <div className="flex items-center">
-        <a href={cv}  target='_blank'>
+        <a href={cv}  target='_blank' >
           <button 
-          className="inline-flex items-center gap-2 h-9 px-4 py-2 mr-4 rounded-md border text-sm font-medium bg-background text-foreground border-input shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus:outline-none focus:ring-1 focus:ring-ring disabled:opacity-50 disabled:pointer-events-none">
+          style={{
+            backgroundColor:(currentTheme.backgroundColor==="white") ? "black":"white",
+            color:(currentTheme.color==="white") ? "black":"white"
+          }}
+          className=" cursor-pointer flex items-center justify-center border-1 mr-3 p-1 rounded-lg">
 
           <span className="font-semibold">Resume</span>
 
