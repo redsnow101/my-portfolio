@@ -7,7 +7,6 @@ import Footer from './layout/Footer';
 import ExperienceTabs from './layout/ExperienceTabs';
 
 function MyPortfolio() {
-
     const[theme, setTheme] = useState({
         color: "white",
         backgroundColor:  "black"
