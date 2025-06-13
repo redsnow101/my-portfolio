@@ -22,7 +22,7 @@ function MyPortfolio() {
 
   return (
     <div style={theme} >    
-        <div className='w-[70%] m-auto'>
+        <div className='sm:w-[70%] m-auto'>
             <div  className="w-full p-2 flex sticky top-0 z-10 backdrop-blur-sm rounded-4xl">
                 <NavBar/>
                 <ThemeSwitcher currentTheme={theme} onButtonClick={handleTheme}/>
