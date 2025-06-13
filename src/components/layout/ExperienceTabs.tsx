@@ -20,7 +20,7 @@ const ExperienceTabs = ({currentTheme}:ExperienceProps) => {
       return(
         <div>
           <div className="flex justify-between">
-            <div className="m-2 p-2">
+            <div className="my-2 sm:m-2 sm:p-2 md:p-2 md:m-2 ">
               <div>
                 <p className="font-semibold">Parul University</p>
                 <p className="ml-2 mt-[-4px] font-light text-sm">B.Tech CSE</p>
@@ -43,7 +43,7 @@ const ExperienceTabs = ({currentTheme}:ExperienceProps) => {
 
 
           <div className="flex justify-between">
-            <div className="m-2 p-2">
+            <div className="sm:m-2 sm:p-2 md:p-2 md:m-2 ">
               <div>
                 <p className="font-semibold">Capital College</p>
                 <p className="ml-2 mt-[-4px] font-light text-sm">PCM</p>

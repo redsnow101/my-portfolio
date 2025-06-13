@@ -22,13 +22,13 @@ function MyPortfolio() {
 
   return (
     <div style={theme} >    
-        <div className='w-[70%] m-auto max-h-full '>
+        <div className='w-[70%] m-auto'>
             <div  className="w-full p-2 flex sticky top-0 z-10 backdrop-blur-sm rounded-4xl">
                 <NavBar/>
                 <ThemeSwitcher currentTheme={theme} onButtonClick={handleTheme}/>
             </div>
         
-            <div className='w-[85%] m-auto mt-12 flex flex-col gap-5 min-w-sm max-w-lg'>
+            <div className='w-[85%] m-auto mt-12 flex flex-col gap-5'>
                 <InfoCard currentTheme={theme}/>
                 <TechUsed/>
                 <ExperienceTabs currentTheme={theme}/>
