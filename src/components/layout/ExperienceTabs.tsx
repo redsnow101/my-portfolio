@@ -10,10 +10,36 @@ const ExperienceTabs = ({currentTheme}:ExperienceProps) => {
 
     if(activeTab==="projects"){
       return(
-        <div className="h-[400px] flex items-center justify-center">
-          <p className="font-semibold font-mono">Coming Soon......</p>
+        <div>
+          {/* Project 1 */}
+          <div className="flex justify-between">
+            <div className="my-2 sm:m-2 sm:p-2 md:p-2 md:m-2">
+              <div>
+                <p className="font-semibold">TypeRacer</p>
+                <p className="ml-2 mt-[-4px] font-light text-sm">Typing Speed Web Application</p>
+              </div>
+
+              <p className="text-md font-semibold mt-1">Features:</p>
+              <ul className="p-2 mt-[-9px] list-disc list-inside text-sm">
+                <li>Real-time WPM calculation</li>
+                <li>Accuracy and error tracking</li>
+                <li>Live typing box with colored feedback</li>
+                <li>Tailwind CSS for clean UI</li>
+                <li>React + Vite frontend</li>
+              </ul>
+
+              <p className="font-mono">Tech Stack: React, TailwindCSS, Vite</p>
+              
+            </div>
+            <div className="m-2 p-2 w-[30%] h-fit font-light text-end">
+              <a href="https://www.type.rabindra-thapa.com.np" target="_blank"> Live:🔦</a>
+            </div>
+          </div>
+
+          <hr className="my-2" />
 
         </div>
+
       )
     }
     else{
@@ -60,10 +86,6 @@ const ExperienceTabs = ({currentTheme}:ExperienceProps) => {
             </div>
             <div className="m-2 p-2 w-[30%] h-fit font-light text-end text-sm">2018-2021</div>
           </div>
-
-          
-
-
         </div>
       )
     }
