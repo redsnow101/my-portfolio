@@ -1,4 +1,4 @@
-import cv from '../../assets/Academic_CV.pdf'
+import cv from '../../assets/Academic_CV_July.pdf'
 import Social from '../ui/Social'
 
 interface InfoCardProps{
